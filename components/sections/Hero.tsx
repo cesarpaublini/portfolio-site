@@ -20,7 +20,7 @@ export default function Hero() {
 
       <div className="max-w-4xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white">
-          Hey, I'm <span className="text-indigo-400">Cesar</span><br />
+          {`Hey, I'm`} <span className="text-indigo-400">Cesar</span><br />
           <span className="text-zinc-400">A Creative Technologist</span>
         </h1>
 
