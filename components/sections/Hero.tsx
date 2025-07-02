@@ -6,7 +6,7 @@ import GridBackground from "@/components/GridBackground";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center px-8 sm:px-16">
+    <section className="relative min-h-[75vh] flex items-center justify-center px-8 sm:px-16">
       <GridBackground />
       <div className="max-w-2xl z-10 text-left">
         <h1 className="text-5xl sm:text-6xl font-bold leading-tight text-white">
@@ -48,5 +48,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    
   );
 }
