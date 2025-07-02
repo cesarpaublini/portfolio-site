@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Font smoothing, scroll, and base layout */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-black text-white font-sans antialiased;
+  scroll-behavior: smooth;
+}
+
+/* Typography resets and polish */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-black;
+}
+
+p {
+  @apply text-gray-700 leading-relaxed;
+}
+
+/* Links */
+a {
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
+}
+
+/* Button resets */
+button {
+  @apply focus:outline-none;
+}
+
+/* Image styling */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Navigation links */
+.nav-link {
+  @apply text-white hover:text-purple-400 transition-colors duration-200;
 }
