@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "postcss.validate": true,
+  "postcss.lint.enable": true,
+  "tailwindCSS.includeLanguages": {
+    "postcss": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "css.validate": false
+} 
