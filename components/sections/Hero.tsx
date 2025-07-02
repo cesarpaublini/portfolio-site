@@ -10,7 +10,7 @@ export default function Hero() {
       <GridBackground />
       <div className="max-w-2xl z-10 text-left">
         <h1 className="text-5xl sm:text-6xl font-bold leading-tight text-white">
-          Hey, I'm <span className="text-violet-400">Cesar</span>
+          {`Hey, I'm `}<span className="text-violet-400">Cesar</span>
         </h1>
         <h2 className="text-3xl sm:text-5xl font-semibold mt-2 text-gray-300">
           A Creative Technologist
