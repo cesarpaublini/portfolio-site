@@ -37,7 +37,7 @@ export default function ContactSection() {
               Let's Work Together
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Ready to bring your ideas to life? I'm always open to discussing new projects, 
+              Ready to bring your ideas to life? I&apos;m always open to discussing new projects, 
               creative opportunities, or just having a chat about technology and design.
             </p>
           </div>
@@ -109,8 +109,8 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-6">Get in touch</h3>
                 <p className="text-gray-400 mb-8">
-                  I'm currently available for freelance work and full-time opportunities. 
-                  Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                  I&apos;m currently available for freelance work and full-time opportunities. 
+                  Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
                 </p>
               </div>
 
