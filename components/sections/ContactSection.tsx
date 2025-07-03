@@ -34,7 +34,7 @@ export default function ContactSection() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl text-white font-bold mb-4">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Ready to bring your ideas to life? I&apos;m always open to discussing new projects, 
