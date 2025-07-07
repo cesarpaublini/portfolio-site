@@ -317,7 +317,7 @@ export default function ProjectsPage() {
             {/* Image Slider */}
             <div className="relative p-6">
               <div className="relative h-90 rounded-lg overflow-hidden">
-                {selectedProject.videos && (
+                {selectedProject.id === 2 && selectedProject.videos ? (
                   <div className="relative flex gap-x-4 overflow-x-auto py-2 px-1 h-[36rem] md:h-[28rem]">
                     {selectedProject.videos.map((video, idx) => (
                       <div
@@ -351,9 +351,8 @@ export default function ProjectsPage() {
                     {/* Scroll indicator */}
                     <div className="pointer-events-none absolute bottom-0 right-0 w-24 h-8 bg-gradient-to-l from-black/80 to-transparent rounded-b-lg" />
                   </div>
-                )}
-                {!selectedProject.videos && (
-                  <div className="relative h-full overflow-hidden">
+                ) : (
+                  <div className="relative h-80 bg-zinc-900 rounded-lg overflow-hidden">
                     <div 
                       className="w-full h-full bg-gradient-to-br from-violet-600/20 to-purple-600/20 flex items-center justify-center"
                       style={{
