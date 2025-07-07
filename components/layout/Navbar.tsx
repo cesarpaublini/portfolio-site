@@ -15,9 +15,9 @@ export default function Navbar() {
 
         {/* Right - Links */}
         <nav className="flex items-center gap-8 text-sm font-medium">
-          <a href="#home" className="nav-link">Home</a>
-          <a href="#projects" className="nav-link">Projects</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link>
+          <Link href="/projects" className="text-gray-300 hover:text-white transition-colors">Projects</Link>
+          <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
         </nav>
       </div>
     </header>
