@@ -163,16 +163,16 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
   },
   {
     id: 4,
-    title: "RumbaToursMiami.com – Booking Website Redesign",
+    title: "RumbaToursMiami.com Booking Website Redesign",
     subtitle: "Founder, Product Designer, UI/UX Lead, Junior Frontend Developer",
-    description: "RumbaToursMiami.com is the official booking site for Miami’s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand’s visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.",
+    description: "RumbaToursMiami.com is the official booking site for Miami&apos;s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand's visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.",
     fullDescription: `
-<p><strong>RumbaToursMiami.com – Booking Website Redesign</strong></p>
+<p><strong>RumbaToursMiami.com Booking Website Redesign</strong></p>
 <p><strong>Role:</strong> Founder, Product Designer, UI/UX Lead, Junior Frontend Developer<br/>
 <strong>Type:</strong> Direct-to-Consumer Booking Platform for Event Transportation</p>
 
 <p><strong>Project Overview</strong></p>
-<p>RumbaToursMiami.com is the official booking site for Miami’s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand’s visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.</p>
+<p>RumbaToursMiami.com is the official booking site for Miami&apos;s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand’s visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.</p>
 
 <p><strong>My Contributions</strong></p>
 <ul>
@@ -358,7 +358,7 @@ export default function ProjectsPage() {
                       <>
                         <h3 className="text-xl font-semibold text-white mb-2">Cleer Product Photography</h3>
                         <p className="text-gray-300 text-sm mb-4">Creative content project</p>
-                        <p className="text-gray-400 text-sm mb-4">Directed, photographed, and retouched lifestyle and product shots for Cleer's website, ads, and e-commerce listings.</p>
+                        <p className="text-gray-400 text-sm mb-4">Directed, photographed, and retouched lifestyle and product shots for Cleer&apos;s website, ads, and e-commerce listings.</p>
                         <div className="flex flex-wrap gap-2 mt-2">
                           <span className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">Photography</span>
                           <span className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">Art Direction</span>
@@ -369,7 +369,7 @@ export default function ProjectsPage() {
                     ) : project.id === 4 ? (
                       <>
                         <h3 className="text-xl font-semibold text-white mb-2">Website and Booking Platform</h3>
-                        <p className="text-gray-400 text-sm mb-4">Redesigned and developed a mobile-first website for Miami’s top party bus, boosting bookings with real-time pricing, Stripe checkout, and video-driven UI.</p>
+                        <p className="text-gray-400 text-sm mb-4">Redesigned and developed a mobile-first website for Miami&apos;s top party bus, boosting bookings with real-time pricing, Stripe checkout, and video-driven UI.</p>
                         <div className="flex flex-wrap gap-2 mt-2">
                           {project.tools.slice(0, 3).map((tool) => (
                             <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
