@@ -127,18 +127,83 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    subtitle: "Personal branding",
-    description: "A modern portfolio website showcasing creative work and skills.",
-    fullDescription: "This portfolio website demonstrates modern web design principles with smooth animations, responsive layout, and optimal performance. Features include project showcases, skills section, contact forms, and seamless navigation. Built with accessibility and SEO best practices in mind.",
-    image: "/images/projects/project3.jpg",
-    images: ["/images/projects/project3.jpg", "/images/projects/project3-2.jpg", "/images/projects/project3-3.jpg"],
-    tools: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/cesarpaublini/portfolio",
-    liveUrl: "https://cesarpaublini.com"
+    title: "Cleer Product Photography & Web Content",
+    subtitle: "Art Director, Photographer, Retoucher, Web-Image Optimizer",
+    description: "Premium audio brand, to refresh visual assets for two flagship products active-noise-cancelling headphones and smart-amp earbuds. My goal was to create a versatile image library that could drop straight into product pages, hero banners, emails, and social ads without impacting load speed or brand consistency.",
+    fullDescription: `
+<p><strong>Cleer Product Photography & Web Content</strong></p>
+<p><strong>Role:</strong> Art Director, Photographer, Retoucher, Web-Image Optimizer<br/>
+<strong>Type:</strong> E-commerce & Lifestyle Photo Production</p>
+
+<p><strong>Project Overview</strong></p>
+<p>Premium audio brand, to refresh visual assets for two flagship products active-noise-cancelling headphones and smart-amp earbuds. My goal was to create a versatile image library that could drop straight into product pages, hero banners, emails, and social ads without impacting load speed or brand consistency.</p>
+
+<p><strong>My Contributions</strong></p>
+<ul>
+  <li><strong>Concept & Shot-List:</strong> Defined five lifestyle scenarios (commute, desk, city stroll, bag-drop, hero close-up), story-boarding angles, props, and color palette to match Cleer's brushed-aluminum aesthetic.</li>
+  <li><strong>Production & Direction:</strong> Scouted urban + greenery locations, directed talent for a natural "on-the-go" vibe, and lit scenes for soft, crisp highlights on metallic finishes.</li>
+  <li><strong>Photography:</strong> Captured high-resolution stills on Sony α7 IV with prime lenses, bracketing exposures to preserve texture and logo detail.</li>
+  <li><strong>Post-Production:</strong> Color-graded in Lightroom, retouched in Photoshop, composited subtle reflections, and exported multiple aspect ratios</li>
+</ul>
+
+<p><strong>Outcome</strong></p>
+<p>Delivered 40+ hi-res assets in a single, DAM-ready package. Cleer saw increase in product-page dwell time and re-used the imagery across email, Amazon A+, and paid ads with zero additional edits.</p>
+`,
+    image: "/images/projects/cleer-photo-1.webp",
+    images: [
+      "/images/projects/cleer-photo-1.webp",
+      "/images/projects/cleer-photo-2.webp",
+      "/images/projects/cleer-photo-3.webp",
+      "/images/projects/cleer-photo-4.webp"
+    ],
+    tools: ["Photography", "Art Direction", "Retouching", "Lightroom", "Photoshop"],
+    githubUrl: undefined,
+    liveUrl: undefined,
+    videos: undefined
   },
   {
     id: 4,
+    title: "RumbaToursMiami.com – Booking Website Redesign",
+    subtitle: "Founder, Product Designer, UI/UX Lead, Junior Frontend Developer",
+    description: "RumbaToursMiami.com is the official booking site for Miami’s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand’s visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.",
+    fullDescription: `
+<p><strong>RumbaToursMiami.com – Booking Website Redesign</strong></p>
+<p><strong>Role:</strong> Founder, Product Designer, UI/UX Lead, Junior Frontend Developer<br/>
+<strong>Type:</strong> Direct-to-Consumer Booking Platform for Event Transportation</p>
+
+<p><strong>Project Overview</strong></p>
+<p>RumbaToursMiami.com is the official booking site for Miami’s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand’s visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.</p>
+
+<p><strong>My Contributions</strong></p>
+<ul>
+  <li><strong>Product Strategy:</strong> Defined key user flows, pricing logic, and funnel structure. Prioritized mobile-first speed and simplicity to reduce drop-off and improve conversion.</li>
+  <li><strong>UI/UX Design:</strong> Designed the full site in Figma and implemented core layouts using Next.js and Tailwind. Built a sticky booking card with slide-up animation on mobile for easy access.</li>
+  <li><strong>Frontend Development:</strong> Worked closely with the dev team to build reusable components, integrate Google Maps Distance Matrix for geo-based travel fees, and embed a Stripe-ready checkout form.</li>
+  <li><strong>Media & Content:</strong> Shot and edited promotional video and tour images, wrote all marketing copy and CTAs, and structured SEO-optimized text sections.</li>
+  <li><strong>Performance Optimization:</strong> Achieved a 90+ Lighthouse mobile score, compressed all video and image assets, and implemented lazy loading for faster UX.</li>
+</ul>
+
+<p><strong>Outcome</strong></p>
+<ul>
+  <li>Boosted direct bookings by over 30%</li>
+  <li>Reduced time-to-book by over 40%</li>
+  <li>Generated quote requests from new cities (Dallas, Sarasota, and NC), validating nationwide appeal</li>
+</ul>
+<p>RumbaToursMiami.com now operates as a high-converting DTC platform that reflects the fun, high-energy experience of our party bus tours.</p>
+`,
+    image: "/images/projects/rumbatours-thumbnail.jpg",
+    images: [
+      "/images/projects/rumbatours-page-1.jpg",
+      "/images/projects/rumbatours-page-2.jpg",
+      "/images/projects/rumbatours-page-3.jpg"
+    ],
+    tools: ["Next.js", "Tailwind CSS", "React", "Stripe", "Google Maps API", "Figma", "Lightroom", "Final Cut Pro"],
+    githubUrl: undefined,
+    liveUrl: undefined,
+    videos: undefined
+  },
+  {
+    id: 5,
     title: "Weather Dashboard",
     subtitle: "Data visualization",
     description: "Real-time weather data with interactive charts and forecasts.",
@@ -150,7 +215,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     liveUrl: "https://weather-demo.vercel.app"
   },
   {
-    id: 5,
+    id: 6,
     title: "Social Media Dashboard",
     subtitle: "Analytics platform",
     description: "Comprehensive social media analytics and management tool.",
@@ -261,36 +326,78 @@ export default function ProjectsPage() {
                   
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      {project.id === 1 ? (
-                        <>
-                          <h3 className="text-xl font-semibold text-white mb-2">Trolley Booking Platform</h3>
-                          <p className="text-gray-300 text-sm mb-4">Event transportation tool</p>
-                          <p className="text-gray-400 text-sm mb-4">Nationwide platform to book trolleys for weddings, parties, and corporate events in 90+ cities.</p>
-                        </>
-                      ) : (
-                        <>
-                          <h3 className="text-xl font-semibold text-white mb-2">Virgin Voyages Content Series</h3>
-                          <p className="text-gray-300 text-sm mb-4">Creative production project</p>
-                          <p className="text-gray-400 text-sm mb-4">Filmed, edited, and directed social media videos for destinations, promos, onboard activities, and a 2023 ad campaign BTS.</p>
-                        </>
-                      )}
-                      <div className="flex flex-wrap gap-2">
-                        {project.tools.slice(0, 3).map((tool) => (
-                          <span
-                            key={tool}
-                            className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30"
-                          >
-                            {tool}
-                          </span>
-                        ))}
-                        {project.tools.length > 3 && (
-                          <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">
-                            +{project.tools.length - 3} more
-                          </span>
-                        )}
-                      </div>
-                    </div>
+                    {project.id === 1 ? (
+                      <>
+                        <h3 className="text-xl font-semibold text-white mb-2">Trolley Booking Platform</h3>
+                        <p className="text-gray-300 text-sm mb-4">Event transportation tool</p>
+                        <p className="text-gray-400 text-sm mb-4">Nationwide platform to book trolleys for weddings, parties, and corporate events in 90+ cities.</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {project.tools.slice(0, 3).map((tool) => (
+                            <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
+                          ))}
+                          {project.tools.length > 3 && (
+                            <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                          )}
+                        </div>
+                      </>
+                    ) : project.id === 2 ? (
+                      <>
+                        <h3 className="text-xl font-semibold text-white mb-2">Virgin Voyages Content Series</h3>
+                        <p className="text-gray-300 text-sm mb-4">Creative production project</p>
+                        <p className="text-gray-400 text-sm mb-4">Filmed, edited, and directed social media videos for destinations, promos, onboard activities, and a 2023 ad campaign BTS.</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {project.tools.slice(0, 3).map((tool) => (
+                            <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
+                          ))}
+                          {project.tools.length > 3 && (
+                            <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                          )}
+                        </div>
+                      </>
+                    ) : project.id === 3 ? (
+                      <>
+                        <h3 className="text-xl font-semibold text-white mb-2">Cleer Product Photography</h3>
+                        <p className="text-gray-300 text-sm mb-4">Creative content project</p>
+                        <p className="text-gray-400 text-sm mb-4">Directed, photographed, and retouched lifestyle and product shots for Cleer's website, ads, and e-commerce listings.</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          <span className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">Photography</span>
+                          <span className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">Art Direction</span>
+                          <span className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">Retouching</span>
+                          <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+2 more</span>
+                        </div>
+                      </>
+                    ) : project.id === 4 ? (
+                      <>
+                        <h3 className="text-xl font-semibold text-white mb-2">Website and Booking Platform</h3>
+                        <p className="text-gray-400 text-sm mb-4">Redesigned and developed a mobile-first website for Miami’s top party bus, boosting bookings with real-time pricing, Stripe checkout, and video-driven UI.</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {project.tools.slice(0, 3).map((tool) => (
+                            <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
+                          ))}
+                          {project.tools.length > 3 && (
+                            <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                          )}
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="flex flex-wrap gap-2">
+                          {project.tools.slice(0, 3).map((tool) => (
+                            <span
+                              key={tool}
+                              className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30"
+                            >
+                              {tool}
+                            </span>
+                          ))}
+                          {project.tools.length > 3 && (
+                            <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">
+                              +{project.tools.length - 3} more
+                            </span>
+                          )}
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
