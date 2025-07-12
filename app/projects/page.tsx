@@ -204,40 +204,67 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
   },
   {
     id: 5,
-    title: "Weather Dashboard",
-    subtitle: "Data visualization",
-    description: "Real-time weather data with interactive charts and forecasts.",
-    fullDescription: "An interactive weather dashboard that provides real-time weather information with beautiful data visualizations. Features include 7-day forecasts, hourly predictions, interactive maps, and customizable location tracking. Integrates with multiple weather APIs for accurate data.",
-    image: "/images/projects/project4.jpg",
-    images: ["/images/projects/project4.jpg", "/images/projects/project4-2.jpg", "/images/projects/project4-3.jpg"],
-    tools: ["React", "Chart.js", "OpenWeather API", "CSS3", "JavaScript"],
-    githubUrl: "https://github.com/cesarpaublini/weather-dashboard",
-    liveUrl: "https://weather-demo.vercel.app"
+    title: "Laundrify Website Photography & Creative Direction",
+    subtitle: "Creative Director, Photographer, Art Director, Graphic Designer",
+    description: "Creative direction and photography for Laundrify, an on-demand laundry app in Miami. Led website image update, product photography, editing, and optimization.",
+    fullDescription: `
+<p><strong>Laundrify Website Photography & Creative Direction</strong></p>
+<p><strong>Role:</strong> Creative Director, Photographer, Art Director, Graphic Designer<br/>
+<strong>Type:</strong> On-Demand Service App Content</p>
+
+<p><strong>Project Overview</strong></p>
+<p>I was creative director to update website images for Laundrify, an app for on-demand laundry service in Miami, Florida. My work included photography, photo editing, optimizing, product photography, art direction, and graphic design.</p>
+
+<p><strong>My Contributions</strong></p>
+<ul>
+  <li>Planned and directed new website and app imagery to match brand goals</li>
+  <li>Shot and edited product and lifestyle photos for use across web, app, and ads</li>
+  <li>Optimized all images for fast load and crisp display</li>
+  <li>Provided art direction and graphic design for banners and marketing assets</li>
+</ul>
+`,
+    image: "/images/projects/laundrify-thumbnail.jpg",
+    images: [
+      "/images/projects/laundrify-1.jpg",
+      "/images/projects/laundrify-2.jpg",
+      "/images/projects/laundrify-3.jpg"
+    ],
+    tools: ["Photography", "Photo Editing", "Product Photography", "Art Direction", "Graphic Design"],
+    githubUrl: undefined,
+    liveUrl: undefined,
+    videos: undefined
   },
   {
     id: 6,
-    title: "Social Media Dashboard",
-    subtitle: "Analytics platform",
-    description: "Comprehensive social media analytics and management tool.",
-    fullDescription: "A powerful social media dashboard that provides detailed analytics, content scheduling, and performance tracking across multiple platforms. Features include automated posting, engagement metrics, competitor analysis, and customizable reports. Designed for social media managers and businesses.",
-    image: "/images/projects/project5.jpg",
-    images: ["/images/projects/project5.jpg", "/images/projects/project5-2.jpg", "/images/projects/project5-3.jpg"],
-    tools: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Chart.js"],
-    githubUrl: "https://github.com/cesarpaublini/social-dashboard",
-    liveUrl: "https://social-dashboard-demo.vercel.app"
+    title: "Soundcast Product Photography & Art Direction",
+    subtitle: "Art Director, Product Photographer, Creative Direction",
+    description: "Art direction and product photography for Soundcast, a premium speaker brand. Updated website and online listings with new imagery.",
+    fullDescription: `
+<p><strong>Soundcast Product Photography & Art Direction</strong></p>
+<p><strong>Role:</strong> Art Director, Product Photographer, Creative Direction<br/>
+<strong>Type:</strong> E-commerce & Product Content for Speaker Brand</p>
+
+<p><strong>Project Overview</strong></p>
+<p>Directed and photographed new product and lifestyle images for Soundcast, a premium speaker brand. Updated the website and online listings with high-quality, optimized photos to boost brand presence and sales.</p>
+
+<p><strong>My Contributions</strong></p>
+<ul>
+  <li>Planned and executed product and lifestyle shoots for web and e-commerce</li>
+  <li>Provided art direction to ensure brand consistency and visual appeal</li>
+  <li>Edited and optimized all images for fast load and crisp display</li>
+</ul>
+`,
+    image: "/images/projects/soundcast-thumbnail.jpg",
+    images: [
+      "/images/projects/soundcast-1.jpg",
+      "/images/projects/soundcast-2.jpg",
+      "/images/projects/soundcast-3.jpg"
+    ],
+    tools: ["Product Photography", "Art Direction", "Photo Editing", "Creative Direction"],
+    githubUrl: undefined,
+    liveUrl: undefined,
+    videos: undefined
   },
-  {
-    id: 6,
-    title: "AI Chat Application",
-    subtitle: "Machine learning",
-    description: "Intelligent chatbot with natural language processing capabilities.",
-    fullDescription: "An advanced AI chat application that leverages natural language processing to provide intelligent responses. Features include conversation memory, multi-language support, custom training, and integration with various AI models. Built with scalability and performance in mind.",
-    image: "/images/projects/project6.jpg",
-    images: ["/images/projects/project6.jpg", "/images/projects/project6-2.jpg", "/images/projects/project6-3.jpg"],
-    tools: ["React", "Python", "TensorFlow", "FastAPI", "Redis", "Docker"],
-    githubUrl: "https://github.com/cesarpaublini/ai-chat",
-    liveUrl: "https://ai-chat-demo.vercel.app"
-  }
 ];
 
 function StyledProjectDescription({ html }: { html: string }) {
@@ -304,7 +331,7 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group relative bg-[#0d0d0d] rounded-xl overflow-hidden border border-zinc-700 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:border-violet-500"
+                className="group relative bg-gradient-to-br from-violet-600/10 via-purple-600/5 to-violet-800/10 rounded-xl overflow-hidden border border-zinc-700 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:border-violet-500"
                 onClick={() => openModal(project)}
               >
                 {/* Project Image */}
@@ -399,6 +426,7 @@ export default function ProjectsPage() {
                       </>
                     )}
                   </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-purple-600/10 to-violet-800/20 opacity-80 pointer-events-none z-10" />
                 </div>
               </div>
             ))}
