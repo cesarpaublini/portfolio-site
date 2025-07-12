@@ -402,6 +402,34 @@ export default function ProjectsPage() {
                           )}
                         </div>
                       </>
+                    ) : project.id === 5 ? (
+                      <>
+                        <h3 className="text-xl font-semibold text-white mb-2">Laundrify Website Photography</h3>
+                        <p className="text-gray-300 text-sm mb-4">Creative content project</p>
+                        <p className="text-gray-400 text-sm mb-4">Creative direction and photography for Laundrify, an on-demand laundry app in Miami.</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {project.tools.slice(0, 3).map((tool) => (
+                            <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
+                          ))}
+                          {project.tools.length > 3 && (
+                            <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                          )}
+                        </div>
+                      </>
+                    ) : project.id === 6 ? (
+                      <>
+                        <h3 className="text-xl font-semibold text-white mb-2">Soundcast Product Photography</h3>
+                        <p className="text-gray-300 text-sm mb-4">Creative content project</p>
+                        <p className="text-gray-400 text-sm mb-4">Art direction and product photography for Soundcast, a premium speaker brand.</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {project.tools.slice(0, 3).map((tool) => (
+                            <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
+                          ))}
+                          {project.tools.length > 3 && (
+                            <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                          )}
+                        </div>
+                      </>
                     ) : (
                       <>
                         <div className="flex flex-wrap gap-2">
