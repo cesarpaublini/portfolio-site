@@ -344,11 +344,7 @@ export default function ProjectsPage() {
                       backgroundPosition: 'center'
                     }}
                   >
-                    {/* Fallback if image doesn't load */}
-                    <div className="text-center text-gray-400 opacity-0 hover:opacity-100 transition-opacity">
-                      <div className="text-4xl mb-2">📱</div>
-                      <div className="text-sm">{project.title}</div>
-                    </div>
+                    
                   </div>
                   
                   {/* Hover Overlay */}
@@ -496,12 +492,7 @@ export default function ProjectsPage() {
                         backgroundPosition: 'center'
                       }}
                     >
-                      {/* Fallback if image doesn't load */}
-                      <div className="text-center text-gray-400 opacity-0 hover:opacity-100 transition-opacity">
-                        <div className="text-6xl mb-4">📱</div>
-                        <div className="text-lg">{selectedProject.title}</div>
-                        <div className="text-sm mt-2">Image {currentImageIndex + 1} of {selectedProject.images.length}</div>
-                      </div>
+                      
                     </div>
                   </div>
                 )}
