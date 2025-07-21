@@ -33,16 +33,16 @@ export default function Hero() {
           </Link>
           <div className="flex gap-4 text-2xl ml-4">
             <a href="https://github.com/cesarpaublini" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="text-white hover:text-gray-300 transition-transform transition hover:scale-105" />
+              <FaGithub className="text-white hover:text-gray-300 transition-transform hover:scale-105" />
             </a>
             <a href="https://www.linkedin.com/in/paublini" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-white hover:text-gray-300 transition-transform transition hover:scale-105" />
+              <FaLinkedin className="text-white hover:text-gray-300 transition-transform hover:scale-105" />
             </a>
             <a href="https://www.instagram.com/paublini" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-white hover:text-gray-300 transition-transform transition hover:scale-105" />
+              <FaInstagram className="text-white hover:text-gray-300 transition-transform hover:scale-105" />
             </a>
             <a href="https://wa.me/17862344456" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp className="text-white hover:text-gray-300 transition-transform transition hover:scale-105" />
+              <FaWhatsapp className="text-white hover:text-gray-300 transition-transform hover:scale-105" />
             </a>
           </div>
         </div>
