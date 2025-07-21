@@ -25,20 +25,21 @@ export default function SkillsSection() {
               <h3 className="text-xl font-semibold text-white mb-2">What I Can Do</h3>
               <p className="text-sm text-gray-300 mb-3">I can help develop solutions that will help you grow your business:</p>
               <ul className="list-disc pl-5 text-sm space-y-1 text-gray-200">
-                <li>UI/UX Design</li>
+                <li>Graphic, UI/UX & Web Design</li>
                 <li>Web & App Development</li>
-                <li>API & Database Integration</li>
-                <li>SEO & Marketing</li>
+                <li>API Integration & CMS Setup</li>
+                <li>SEO, Content & Video Editing</li>
+                <li>Motion Graphics & Video Editing</li>
               </ul>
             </div>
 
             {/* Card 2 */}
             <div className="bg-[#0d0d0d] rounded-xl p-6 border border-zinc-700">
               <h3 className="text-xl font-semibold text-white mb-2">Tools I Use</h3>
-              <p className="text-sm text-gray-300 mb-3">I use the latest tools and technologies to build functional and scalable products:</p>
+              <p className="text-sm text-gray-300 mb-3">I use modern tools to design and build functional, scalable products:</p>
               <p className="text-sm text-gray-200"><strong>Frontend:</strong> Tailwind CSS, React, TypeScript</p>
               <p className="text-sm text-gray-200"><strong>Backend:</strong> Node.js, Fastify, MongoDB, PostgreSQL</p>
-              <p className="text-sm text-gray-200"><strong>Design:</strong> Figma, Framer, Photoshop</p>
+              <p className="text-sm text-gray-200"><strong>Design:</strong> Figma, Photoshop, Premiere Pro, Illustrator</p>
             </div>
 
             {/* Card 3 */}
