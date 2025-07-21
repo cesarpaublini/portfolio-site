@@ -5,8 +5,6 @@ import { questions, personaResults } from './questions';
 import QuestionCard from './QuestionCard';
 import ResultCard from './ResultCard';
 
-const personas = Object.keys(personaResults);
-
 const CreativeQuizSection: React.FC = () => {
   const [showQuiz, setShowQuiz] = useState(false);
   const [step, setStep] = useState(0);
