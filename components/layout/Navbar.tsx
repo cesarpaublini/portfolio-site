@@ -10,7 +10,7 @@ export default function Navbar() {
           href="/"
           className="text-lg font-bold text-purple-400 tracking-tight hover:text-purple-300 transition"
         >
-          Cesar.dev
+          Cesarpaublini
         </Link>
 
         {/* Right - Links */}
