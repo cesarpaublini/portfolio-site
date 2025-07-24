@@ -13,7 +13,7 @@ interface ResultCardProps {
   onRetake: () => void;
 }
 
-const ResultCard: React.FC<ResultCardProps> = ({ personaResult, onRetake }) => {
+const ResultCard: React.FC<ResultCardProps> = ({ personaKey, personaResult, onRetake }) => {
   return (
     <div className="w-full max-w-2xl mx-auto bg-zinc-900 dark:bg-zinc-900 rounded-xl shadow-lg p-8 mb-8 flex flex-col items-center">
       <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white" style={{ fontFamily: personaResult.font }}>{personaResult.title}</h3>
