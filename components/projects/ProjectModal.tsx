@@ -14,6 +14,20 @@ interface ProjectModalProps {
   prevImage: () => void;
 }
 
+// Styled component for project descriptions
+function StyledProjectDescription({ html }: { html: string }) {
+  const styledHtml = html
+    .replace(/<p><strong>(.*?)<\/strong><\/p>/g, '<h4 class="text-violet-400 text-lg font-semibold mt-6 mb-3">$1</h4>')
+    .replace(/<p>/g, '<p class="text-gray-300 leading-relaxed mb-4">')
+    .replace(/<ul>/g, '<ul class="list-disc list-inside space-y-2 ml-4 mb-4">')
+    .replace(/<li>/g, '<li class="text-gray-400">')
+    .replace(/<strong>/g, '<strong class="text-violet-300 font-semibold">');
+
+  return (
+    <div className="space-y-4" dangerouslySetInnerHTML={{ __html: styledHtml }} />
+  );
+}
+
 const ProjectModal: React.FC<ProjectModalProps> = ({
   project,
   isOpen,
@@ -110,7 +124,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
         <div className="p-6 border-t border-zinc-700">
           <div className="mb-6">
             <h3 className="text-lg font-semibold text-white mb-2">Description</h3>
-            <div className="text-gray-400 leading-relaxed" dangerouslySetInnerHTML={{ __html: project.fullDescription }} />
+            <StyledProjectDescription html={project.fullDescription} />
           </div>
           {/* Tools Used */}
           <div className="mb-6">
