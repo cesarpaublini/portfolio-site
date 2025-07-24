@@ -8,34 +8,13 @@ import ProjectModal from '@/components/projects/ProjectModal';
 
 export default function ProjectsPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const openModal = (project: Project) => {
     setSelectedProject(project);
-    setCurrentImageIndex(0);
   };
 
   const closeModal = () => {
     setSelectedProject(null);
-    setCurrentImageIndex(0);
-  };
-
-  const nextImage = () => {
-    if (selectedProject) {
-      const images = selectedProject.images || [];
-      setCurrentImageIndex((prev) =>
-        prev === images.length - 1 ? 0 : prev + 1
-      );
-    }
-  };
-
-  const prevImage = () => {
-    if (selectedProject) {
-      const images = selectedProject.images || [];
-      setCurrentImageIndex((prev) =>
-        prev === 0 ? images.length - 1 : prev - 1
-      );
-    }
   };
 
   return (
@@ -72,10 +51,6 @@ export default function ProjectsPage() {
         project={selectedProject}
         isOpen={!!selectedProject}
         onClose={closeModal}
-        currentImageIndex={currentImageIndex}
-        setCurrentImageIndex={setCurrentImageIndex}
-        nextImage={nextImage}
-        prevImage={prevImage}
       />
 
       <Footer />

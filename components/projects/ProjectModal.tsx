@@ -2,16 +2,12 @@
 
 import React, { useEffect } from 'react';
 import { Project } from './projectsData';
-import { FaGithub, FaExternalLinkAlt, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaTimes } from 'react-icons/fa';
 
 interface ProjectModalProps {
   project: Project | null;
   isOpen: boolean;
   onClose: () => void;
-  currentImageIndex: number;
-  setCurrentImageIndex: (idx: number) => void;
-  nextImage: () => void;
-  prevImage: () => void;
 }
 
 function StyledProjectDescription({ html }: { html: string }) {
@@ -31,10 +27,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   project,
   isOpen,
   onClose,
-  currentImageIndex,
-  setCurrentImageIndex,
-  nextImage,
-  prevImage,
 }) => {
   // Prevent background scrolling when modal is open
   useEffect(() => {
