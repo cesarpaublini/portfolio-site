@@ -9,6 +9,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+  const safeTools = Array.isArray(project.tools) ? project.tools : [];
+
   return (
     <div
       className="group relative bg-gradient-to-br from-violet-600/10 via-purple-600/5 to-violet-800/10 rounded-xl overflow-hidden border border-zinc-700 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:border-violet-500"
@@ -35,11 +37,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 <p className="text-gray-300 text-sm mb-4">Event transportation tool</p>
                 <p className="text-gray-400 text-sm mb-4">Nationwide platform to book trolleys for weddings, parties, and corporate events in 90+ cities.</p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {project.tools.slice(0, 3).map((tool) => (
+                  {safeTools.slice(0, 3).map((tool) => (
                     <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
                   ))}
-                  {project.tools.length > 3 && (
-                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                  {safeTools.length > 3 && (
+                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{safeTools.length - 3} more</span>
                   )}
                 </div>
               </>
@@ -49,11 +51,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 <p className="text-gray-300 text-sm mb-4">Creative production project</p>
                 <p className="text-gray-400 text-sm mb-4">Filmed, edited, and directed social media videos for destinations, promos, onboard activities, and a 2023 ad campaign BTS.</p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {project.tools.slice(0, 3).map((tool) => (
+                  {safeTools.slice(0, 3).map((tool) => (
                     <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
                   ))}
-                  {project.tools.length > 3 && (
-                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                  {safeTools.length > 3 && (
+                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{safeTools.length - 3} more</span>
                   )}
                 </div>
               </>
@@ -75,11 +77,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 <p className="text-gray-300 text-sm mb-4">Booking platform project</p>
                 <p className="text-gray-400 text-sm mb-4">Redesigned and developed a mobile-first website for Miami’s top party bus, boosting bookings with real-time pricing, Stripe checkout, and video-driven UI.</p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {project.tools.slice(0, 3).map((tool) => (
+                  {safeTools.slice(0, 3).map((tool) => (
                     <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
                   ))}
-                  {project.tools.length > 3 && (
-                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                  {safeTools.length > 3 && (
+                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{safeTools.length - 3} more</span>
                   )}
                 </div>
               </>
@@ -89,11 +91,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 <p className="text-gray-300 text-sm mb-4">Creative content project</p>
                 <p className="text-gray-400 text-sm mb-4">Creative direction and photography for Laundrify, an on-demand laundry app in Miami.</p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {project.tools.slice(0, 3).map((tool) => (
+                  {safeTools.slice(0, 3).map((tool) => (
                     <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
                   ))}
-                  {project.tools.length > 3 && (
-                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                  {safeTools.length > 3 && (
+                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{safeTools.length - 3} more</span>
                   )}
                 </div>
               </>
@@ -103,11 +105,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 <p className="text-gray-300 text-sm mb-4">Creative content project</p>
                 <p className="text-gray-400 text-sm mb-4">Art direction and product photography for Soundcast, a premium speaker brand.</p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {project.tools.slice(0, 3).map((tool) => (
+                  {safeTools.slice(0, 3).map((tool) => (
                     <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
                   ))}
-                  {project.tools.length > 3 && (
-                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                  {safeTools.length > 3 && (
+                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{safeTools.length - 3} more</span>
                   )}
                 </div>
               </>
@@ -117,11 +119,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 <p className="text-gray-300 text-sm mb-4">{project.subtitle}</p>
                 <p className="text-gray-400 text-sm mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {project.tools.slice(0, 3).map((tool) => (
+                  {safeTools.slice(0, 3).map((tool) => (
                     <span key={tool} className="px-3 py-1 bg-violet-600/20 text-violet-400 text-xs rounded-full border border-violet-500/30">{tool}</span>
                   ))}
-                  {project.tools.length > 3 && (
-                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{project.tools.length - 3} more</span>
+                  {safeTools.length > 3 && (
+                    <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+{safeTools.length - 3} more</span>
                   )}
                 </div>
               </>
