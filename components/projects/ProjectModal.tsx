@@ -66,7 +66,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             <div className="mb-6">
               <h3 className="text-lg font-semibold text-white mb-3">Tools & Technologies</h3>
               <div className="flex flex-wrap gap-2">
-                {project.tools.map((tool) => (
+                {project.tools?.map((tool) => (
                   <span
                     key={tool}
                     className="px-3 py-1 bg-violet-600/20 text-violet-400 text-sm rounded-full border border-violet-500/30"
@@ -79,9 +79,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             {/* MOBILE MEDIA SECTION - Shown on mobile, hidden on desktop */}
             <div className="md:hidden mb-6 flex flex-col gap-6 justify-start items-center">
               {/* Image/Video Display */}
-              {project.id === 2 && project.videos ? (
+              {project.id === "2" && project.videos ? (
                 <div className="flex flex-col gap-6 w-full">
-                  {project.videos.map((video, index) => (
+                  {project.videos?.map((video, index) => (
                     <div
                       key={video}
                       className="w-full"
@@ -97,7 +97,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 </div>
               ) : (
                 <div className="flex flex-col gap-6 w-full">
-                  {project.images.map((image, index) => (
+                  {project.images?.map((image, index) => (
                     <div
                       key={image}
                       className="w-full"
@@ -152,9 +152,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           {/* RIGHT COLUMN (Images/Videos) - Hidden on mobile, shown on desktop */}
           <div className="hidden md:flex md:w-1/2 p-8 pt-8 flex-col gap-6 justify-start items-center pb-8">
             {/* Image/Video Display */}
-            {project.id === 2 && project.videos ? (
+            {project.id === "2" && project.videos ? (
               <div className="flex flex-col gap-6 w-full">
-                {project.videos.map((video, index) => (
+                {project.videos?.map((video, index) => (
                   <div
                     key={video}
                     className="w-full"
@@ -170,7 +170,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               </div>
             ) : (
               <div className="flex flex-col gap-6 w-full">
-                {project.images.map((image, index) => (
+                {project.images?.map((image, index) => (
                   <div
                     key={image}
                     className="w-full"

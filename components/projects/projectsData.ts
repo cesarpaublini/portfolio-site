@@ -1,7 +1,7 @@
 // components/projects/projectsData.ts
 
 export interface Project {
-  id: number;
+  id: string;
   title: string;
   subtitle: string;
   description: string;
@@ -16,7 +16,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: "1",
     title: "Event Transportation Lead Gen Platform",
     subtitle: "Developer, Product Manager, SEO Strategist, UI/UX",
     description: "RentATrolley.com is a nationwide event transportation platform created to simplify trolley/bus rentals across 90+ U.S. cities. The platform lets users request quotes and get pricing in under 30 seconds connecting them with our vetted network of trolley operators for weddings, corporate events, parties, and more.",
@@ -61,7 +61,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
 <ul>
   <li>MVP launched May 2025 — first leads came in from Dallas, Sarasota, West Palm Beach, Miami and North Carolina.</li>
   <li>Platform now supports quotes in 90+ cities</li>
-  <li>Scalable lead-gen model that’s SEO-driven and mobile-first</li>
+  <li>Scalable lead-gen model that's SEO-driven and mobile-first</li>
   <li>Built foundation for admin tools and partner portals (in progress)</li>
 </ul>
 `,
@@ -77,7 +77,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: 2,
+    id: "2",
     title: "Virgin Voyages Content Series",
     subtitle: "Creative production project",
     description: "Filmed, edited, and directed social media videos for destinations, promos, onboard activities, and a 2023 ad campaign BTS.",
@@ -91,12 +91,12 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
 <ul>
   <li><strong>Filming & Editing:</strong> Captured and edited short-form content across various destinations and onboard experiences, optimized for platforms like Instagram, TikTok, and YouTube Shorts.</li>
   <li><strong>Campaign Videos:</strong> Produced promotional videos announcing upcoming deals and seasonal offers blending motion graphics, typography, and footage into high-converting assets.</li>
-  <li><strong>Lifestyle & Destination Showcases:</strong> Created visual stories highlighting Virgin’s port cities, onboard activities, fine dining, and entertainment experiences.</li>
+  <li><strong>Lifestyle & Destination Showcases:</strong> Created visual stories highlighting Virgin's port cities, onboard activities, fine dining, and entertainment experiences.</li>
   <li><strong>Behind-the-Scenes (BTS):</strong> Directed and edited BTS content for their 2023 national commercial, giving followers an exclusive look at the production process.</li>
-  <li><strong>Art Direction & Graphics:</strong> Managed overall visual style, brand alignment, and graphic design ensuring consistency with Virgin’s voice and aesthetic across all deliverables.</li>
+  <li><strong>Art Direction & Graphics:</strong> Managed overall visual style, brand alignment, and graphic design ensuring consistency with Virgin's voice and aesthetic across all deliverables.</li>
 </ul>
 <p><strong>Outcome</strong></p>
-<p>The content helped boost Virgin Voyages’ social engagement and aligned with major marketing pushes during 2023. The videos were featured across their official platforms and used for digital ads, promotional reels, and internal creative assets.</p>
+<p>The content helped boost Virgin Voyages' social engagement and aligned with major marketing pushes during 2023. The videos were featured across their official platforms and used for digital ads, promotional reels, and internal creative assets.</p>
 `,
     image: "/images/projects/virgin-voyages-thumbnail.jpg",
     images: ["/images/projects/virgin-voyages-thumbnail.jpg"],
@@ -112,7 +112,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     ]
   },
   {
-    id: 3,
+    id: "3",
     title: "Cleer Product Photography & Web Content",
     subtitle: "Art Director, Photographer, Retoucher, Web-Image Optimizer",
     description: "Premium audio brand, to refresh visual assets for two flagship products active-noise-cancelling headphones and smart-amp earbuds. My goal was to create a versatile image library that could drop straight into product pages, hero banners, emails, and social ads without impacting load speed or brand consistency.",
@@ -124,8 +124,8 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
 <p>Premium audio brand, to refresh visual assets for two flagship products active-noise-cancelling headphones and smart-amp earbuds. My goal was to create a versatile image library that could drop straight into product pages, hero banners, emails, and social ads without impacting load speed or brand consistency.</p>
 <p><strong>My Contributions</strong></p>
 <ul>
-  <li><strong>Concept & Shot-List:</strong> Defined five lifestyle scenarios (commute, desk, city stroll, bag-drop, hero close-up), story-boarding angles, props, and color palette to match Cleer’s brushed-aluminum aesthetic.</li>
-  <li><strong>Production & Direction:</strong> Scouted urban + greenery locations, directed talent for a natural “on-the-go” vibe, and lit scenes for soft, crisp highlights on metallic finishes.</li>
+  <li><strong>Concept & Shot-List:</strong> Defined five lifestyle scenarios (commute, desk, city stroll, bag-drop, hero close-up), story-boarding angles, props, and color palette to match Cleer's brushed-aluminum aesthetic.</li>
+  <li><strong>Production & Direction:</strong> Scouted urban + greenery locations, directed talent for a natural "on-the-go" vibe, and lit scenes for soft, crisp highlights on metallic finishes.</li>
   <li><strong>Photography:</strong> Captured high-resolution stills on Sony α7 IV with prime lenses, bracketing exposures to preserve texture and logo detail.</li>
   <li><strong>Post-Production:</strong> Color-graded in Lightroom, retouched in Photoshop, composited subtle reflections, and exported multiple aspect ratios</li>
 </ul>
@@ -145,16 +145,16 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: 4,
+    id: "4",
     title: "RumbaToursMiami.com – Booking Website Redesign",
     subtitle: "Founder, Product Designer, UI/UX Lead, Junior Frontend Developer",
-    description: "RumbaToursMiami.com is the official booking site for Miami’s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand’s visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.",
+    description: "RumbaToursMiami.com is the official booking site for Miami's #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand's visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.",
     fullDescription: `
 <p><strong>RumbaToursMiami.com – Booking Website Redesign</strong></p>
 <p><strong>Role:</strong> Founder, Product Designer, UI/UX Lead, Junior Frontend Developer<br/>
 <strong>Type:</strong> Direct-to-Consumer Booking Platform for Event Transportation</p>
 <p><strong>Project Overview</strong></p>
-<p>RumbaToursMiami.com is the official booking site for Miami’s #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand’s visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.</p>
+<p>RumbaToursMiami.com is the official booking site for Miami's #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand's visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.</p>
 <p><strong>My Contributions</strong></p>
 <ul>
   <li><strong>Product Strategy:</strong> Defined key user flows, pricing logic, and funnel structure. Prioritized mobile-first speed and simplicity to reduce drop-off and improve conversion.</li>
@@ -183,7 +183,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: 5,
+    id: "5",
     title: "Laundrify Website Photography & Creative Direction",
     subtitle: "Creative Director, Photographer, Art Director, Graphic Designer",
     description: "Creative direction and photography for Laundrify, an on-demand laundry app in Miami. Led website image update, product photography, editing, and optimization.",
@@ -213,7 +213,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: 6,
+    id: "6",
     title: "Soundcast Product Photography & Art Direction",
     subtitle: "Art Director, Product Photographer, Creative Direction",
     description: "Art direction and product photography for Soundcast, a premium speaker brand. Updated website and online listings with new imagery.",

@@ -10,15 +10,15 @@ import { getSupabaseProjects, SupabaseProject } from '@/lib/getSupabaseProjects'
 // Function to convert Supabase project to match our Project interface
 function convertSupabaseProject(supabaseProject: SupabaseProject): Project {
   return {
-    id: supabaseProject.id + 1000, // Offset to avoid conflicts with hardcoded projects
+    id: `supabase-${supabaseProject.id}`, // Prefix to avoid conflicts with hardcoded projects
     title: supabaseProject.title,
     subtitle: supabaseProject.subtitle,
     description: supabaseProject.description,
     fullDescription: supabaseProject.full_description,
-    image: supabaseProject.image,
+    image: Array.isArray(supabaseProject.image) ? supabaseProject.image[0] || '' : supabaseProject.image || '', // Handle image as array
     images: supabaseProject.images,
     tools: supabaseProject.tools,
-    githubUrl: supabaseProject.github_url,
+    githubUrl: undefined, // Removed from new schema
     liveUrl: supabaseProject.live_url,
     videos: supabaseProject.videos,
   };
@@ -29,6 +29,7 @@ export default function ProjectsPage() {
   const [allProjects, setAllProjects] = useState<Project[]>(projects); // Start with hardcoded projects
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [refreshKey, setRefreshKey] = useState(0); // Add refresh key for forcing re-fetch
 
   useEffect(() => {
     async function fetchSupabaseProjects() {
@@ -60,6 +61,15 @@ export default function ProjectsPage() {
     }
 
     fetchSupabaseProjects();
+  }, [refreshKey]); // Add refreshKey as dependency to trigger re-fetch
+
+  // Auto-refresh every 30 seconds to keep in sync with admin dashboard
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRefreshKey(prev => prev + 1);
+    }, 30000); // 30 seconds
+
+    return () => clearInterval(interval);
   }, []);
 
   const openModal = (project: Project) => {

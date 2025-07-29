@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
         {/* Hover Overlay (copy logic from your main grid) */}
         <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
           <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-            {project.id === 1 ? (
+            {project.id === "1" ? (
               <>
                 <h3 className="text-xl font-semibold text-white mb-2">Trolley Booking Platform</h3>
                 <p className="text-gray-300 text-sm mb-4">Event transportation tool</p>
@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                   )}
                 </div>
               </>
-            ) : project.id === 2 ? (
+            ) : project.id === "2" ? (
               <>
                 <h3 className="text-xl font-semibold text-white mb-2">Virgin Voyages Content Series</h3>
                 <p className="text-gray-300 text-sm mb-4">Creative production project</p>
@@ -59,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                   )}
                 </div>
               </>
-            ) : project.id === 3 ? (
+            ) : project.id === "3" ? (
               <>
                 <h3 className="text-xl font-semibold text-white mb-2">Cleer Product Photography</h3>
                 <p className="text-gray-300 text-sm mb-4">Creative content project</p>
@@ -71,7 +71,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                   <span className="px-3 py-1 bg-zinc-700 text-gray-300 text-xs rounded-full">+2 more</span>
                 </div>
               </>
-            ) : project.id === 4 ? (
+            ) : project.id === "4" ? (
               <>
                 <h3 className="text-xl font-semibold text-white mb-2">RumbaToursMiami.com Redesign</h3>
                 <p className="text-gray-300 text-sm mb-4">Booking platform project</p>
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                   )}
                 </div>
               </>
-            ) : project.id === 5 ? (
+            ) : project.id === "5" ? (
               <>
                 <h3 className="text-xl font-semibold text-white mb-2">Laundrify Website Photography</h3>
                 <p className="text-gray-300 text-sm mb-4">Creative content project</p>
@@ -99,7 +99,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                   )}
                 </div>
               </>
-            ) : project.id === 6 ? (
+            ) : project.id === "6" ? (
               <>
                 <h3 className="text-xl font-semibold text-white mb-2">Soundcast Product Photography</h3>
                 <p className="text-gray-300 text-sm mb-4">Creative content project</p>
