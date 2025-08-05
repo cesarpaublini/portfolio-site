@@ -16,6 +16,39 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "0",
+    title: "Fitzen Studios Summer Campaign",
+    subtitle: "Creative Direction, Design & Video Editing",
+    description: "Seasonal promo campaign for a yoga & wellness studio including social content, flyer design, and a branded video to drive memberships.",
+    fullDescription: `
+<p><strong>Fitzen Studios Summer Campaign</strong></p>
+<p><strong>Role:</strong> Creative Direction, Design & Video Editing<br/>
+<strong>Type:</strong> Seasonal Promotional Campaign for Wellness Brand</p>
+<p><strong>Project Overview</strong></p>
+<p>Designed and executed a full summer campaign for Fitzen Studios to promote a 90-day unlimited access offer. I followed brand guidelines and delivered a consistent visual experience across Instagram, in-studio flyers, and digital platforms.</p>
+<p><strong>My Contributions</strong></p>
+<ul>
+  <li>Social media story and feed posts</li>
+  <li>Print-ready flyers</li>
+  <li>Studio class schedules</li>
+  <li>AI-assisted promo video using Google VEO + Premiere Pro</li>
+</ul>
+<p><strong>Creative Strategy</strong></p>
+<p>The goal was to drive urgency while keeping the tone calm, clean, and aligned with the studio's wellness values. I handled the full creative direction, layout design, video editing, and messaging strategy.</p>
+`,
+    image: "/images/projects/fitzen-portfolio-1.png",
+    images: [
+      "/images/projects/fitzen-portfolio-1.png",
+      "/images/projects/fitzen-portfolio-2.png",
+      "/images/projects/fitzen-portfolio-3.png",
+      "/images/projects/fitzen-portfolio-4.png"
+    ],
+    tools: ["Figma", "Photoshop", "Illustrator", "Premiere Pro", "After Effects", "Google VEO"],
+    githubUrl: undefined,
+    liveUrl: undefined,
+    videos: ["/images/projects/fitzen-video.mp4"]
+  },
+  {
     id: "1",
     title: "Event Transportation Lead Gen Platform",
     subtitle: "Developer, Product Manager, SEO Strategist, UI/UX",

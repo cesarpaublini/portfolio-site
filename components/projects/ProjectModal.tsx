@@ -79,43 +79,40 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             {/* MOBILE MEDIA SECTION - Shown on mobile, hidden on desktop */}
             <div className="md:hidden mb-6 flex flex-col gap-6 justify-start items-center">
               {/* Image/Video Display */}
-              {project.id === "2" && project.videos ? (
-                <div className="flex flex-col gap-6 w-full">
-                  {project.videos?.map((video, index) => (
+              <div className="flex flex-col gap-6 w-full">
+                {/* Videos */}
+                {project.videos && project.videos.length > 0 && project.videos.map((video, index) => (
+                  <div
+                    key={video}
+                    className="w-full"
+                  >
+                    {index > 0 && <div className="h-4"></div>} {/* Padding above each video except first */}
+                    <video
+                      src={video}
+                      controls
+                      className="w-full rounded-lg"
+                    />
+                  </div>
+                ))}
+                {/* Images */}
+                {project.images?.map((image, index) => (
+                  <div
+                    key={image}
+                    className="w-full"
+                  >
+                    {index > 0 && <div className="h-4"></div>} {/* Padding above each image except first */}
                     <div
-                      key={video}
-                      className="w-full"
-                    >
-                      {index > 0 && <div className="h-4"></div>} {/* Padding above each video except first */}
-                      <video
-                        src={video}
-                        controls
-                        className="w-full rounded-lg"
-                      />
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="flex flex-col gap-6 w-full">
-                  {project.images?.map((image, index) => (
-                    <div
-                      key={image}
-                      className="w-full"
-                    >
-                      {index > 0 && <div className="h-4"></div>} {/* Padding above each image except first */}
-                      <div
-                        className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
-                        style={{
-                          backgroundImage: `url(${image})`,
-                          backgroundSize: 'cover',
-                          backgroundPosition: 'center',
-                          aspectRatio: '16/9',
-                        }}
-                      ></div>
-                    </div>
-                  ))}
-                </div>
-              )}
+                      className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
+                      style={{
+                        backgroundImage: `url(${image})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        aspectRatio: '16/9',
+                      }}
+                    ></div>
+                  </div>
+                ))}
+              </div>
             </div>
             {/* Description */}
             <div className="mb-6">
@@ -152,43 +149,40 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           {/* RIGHT COLUMN (Images/Videos) - Hidden on mobile, shown on desktop */}
           <div className="hidden md:flex md:w-1/2 p-8 pt-8 flex-col gap-6 justify-start items-center pb-8">
             {/* Image/Video Display */}
-            {project.id === "2" && project.videos ? (
-              <div className="flex flex-col gap-6 w-full">
-                {project.videos?.map((video, index) => (
+            <div className="flex flex-col gap-6 w-full">
+              {/* Videos */}
+              {project.videos && project.videos.length > 0 && project.videos.map((video, index) => (
+                <div
+                  key={video}
+                  className="w-full"
+                >
+                  {index > 0 && <div className="h-4"></div>} {/* Padding above each video except first */}
+                  <video
+                    src={video}
+                    controls
+                    className="w-full rounded-lg"
+                  />
+                </div>
+              ))}
+              {/* Images */}
+              {project.images?.map((image, index) => (
+                <div
+                  key={image}
+                  className="w-full"
+                >
+                  {index > 0 && <div className="h-4"></div>} {/* Padding above each image except first */}
                   <div
-                    key={video}
-                    className="w-full"
-                  >
-                    {index > 0 && <div className="h-4"></div>} {/* Padding above each video except first */}
-                    <video
-                      src={video}
-                      controls
-                      className="w-full rounded-lg"
-                    />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="flex flex-col gap-6 w-full">
-                {project.images?.map((image, index) => (
-                  <div
-                    key={image}
-                    className="w-full"
-                  >
-                    {index > 0 && <div className="h-4"></div>} {/* Padding above each image except first */}
-                    <div
-                      className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
-                      style={{
-                        backgroundImage: `url(${image})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        aspectRatio: '16/9',
-                      }}
-                    ></div>
-                  </div>
-                ))}
-              </div>
-            )}
+                    className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
+                    style={{
+                      backgroundImage: `url(${image})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      aspectRatio: '16/9',
+                    }}
+                  ></div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
