@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cesarpaublini.com/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/
+
+# Allow all other pages
+Allow: /about/
+Allow: /contact/
+Allow: /projects/
+Allow: /resume/ 

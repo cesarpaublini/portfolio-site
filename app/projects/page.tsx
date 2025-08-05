@@ -6,6 +6,16 @@ import { projects, Project } from '@/components/projects/projectsData';
 import ProjectCard from '@/components/projects/ProjectCard';
 import ProjectModal from '@/components/projects/ProjectModal';
 import { getSupabaseProjects, SupabaseProject } from '@/lib/getSupabaseProjects';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Explore my portfolio of creative projects including web development, design campaigns, and digital solutions. From web apps to creative campaigns, discover my work across various industries.",
+  openGraph: {
+    title: "Projects | Cesar Paublini",
+    description: "Explore my portfolio of creative projects including web development, design campaigns, and digital solutions.",
+  },
+};
 
 // Function to convert Supabase project to match our Project interface
 function convertSupabaseProject(supabaseProject: SupabaseProject): Project {
