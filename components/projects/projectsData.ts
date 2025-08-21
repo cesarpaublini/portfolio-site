@@ -46,6 +46,7 @@ export const projects: Project[] = [
       "/images/projects/virgin-voyages-slide-3.png",
       "/images/projects/virgin-voyages-slide-4.png",
       "/images/projects/virgin-voyages-slide-5.png",
+      "/images/projects/virgin-voyages-video-mockup.gif",
       "/images/projects/virgin-voyages-slide-6.png",
       "/images/projects/virgin-voyages-slide-7.png",
       "/images/projects/virgin-voyages-slide-8.png"
