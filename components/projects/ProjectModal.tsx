@@ -102,15 +102,24 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                     className="w-full"
                   >
                     {index > 0 && <div className="h-4"></div>} {/* Padding above each image except first */}
-                    <div
-                      className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
-                      style={{
-                        backgroundImage: `url(${image})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        aspectRatio: '16/9',
-                      }}
-                    ></div>
+                    {image.toLowerCase().endsWith('.gif') ? (
+                      <img
+                        src={image}
+                        alt="Project GIF"
+                        className="w-full rounded-lg"
+                        style={{ aspectRatio: '16/9' }}
+                      />
+                    ) : (
+                      <div
+                        className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
+                        style={{
+                          backgroundImage: `url(${image})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          aspectRatio: '16/9',
+                        }}
+                      ></div>
+                    )}
                   </div>
                 ))}
               </div>
@@ -178,15 +187,24 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                   className="w-full"
                 >
                   {index > 0 && <div className="h-4"></div>} {/* Padding above each image except first */}
-                  <div
-                    className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
-                    style={{
-                      backgroundImage: `url(${image})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      aspectRatio: '16/9',
-                    }}
-                  ></div>
+                  {image.toLowerCase().endsWith('.gif') ? (
+                    <img
+                      src={image}
+                      alt="Project GIF"
+                      className="w-full rounded-lg"
+                      style={{ aspectRatio: '16/9' }}
+                    />
+                  ) : (
+                    <div
+                      className="w-full bg-zinc-900 rounded-lg overflow-hidden flex items-center justify-center"
+                      style={{
+                        backgroundImage: `url(${image})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        aspectRatio: '16/9',
+                      }}
+                    ></div>
+                  )}
                 </div>
               ))}
             </div>
