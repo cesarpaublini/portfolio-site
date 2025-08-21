@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { Project } from './projectsData';
 import { FaGithub, FaExternalLinkAlt, FaTimes } from 'react-icons/fa';
+import DownloadButton from './DownloadButton';
 
 interface ProjectModalProps {
   project: Project | null;
@@ -94,8 +95,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                     />
                   </div>
                 ))}
-                {/* Images */}
-                {project.images?.map((image, index) => (
+                {/* Images - Exclude main project image */}
+                {project.images?.slice(1).map((image, index) => (
                   <div
                     key={image}
                     className="w-full"
@@ -143,6 +144,12 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                   Live Site
                 </a>
               )}
+              {project.pdfUrl && (
+                <DownloadButton 
+                  pdfUrl={project.pdfUrl} 
+                  fileName={`${project.title.replace(/[^a-zA-Z0-9\s]/g, '')}-campaign-deck.pdf`}
+                />
+              )}
             </div>
           </div>
 
@@ -164,8 +171,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                   />
                 </div>
               ))}
-              {/* Images */}
-              {project.images?.map((image, index) => (
+              {/* Images - Exclude main project image */}
+              {project.images?.slice(1).map((image, index) => (
                 <div
                   key={image}
                   className="w-full"
