@@ -12,11 +12,52 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   videos?: string[];
+  pdfUrl?: string;
 }
 
 export const projects: Project[] = [
   {
     id: "0",
+    title: "Virgin Voyages \"Go Beyond the Ship\" 360 Campaign",
+    subtitle: "Creative Direction, Design & Content Adaptation",
+    description: "Designed and developed a full 360° campaign concept for Virgin Voyages.",
+    fullDescription: `
+<p><strong>Virgin Voyages "Go Beyond the Ship" 360 Campaign</strong></p>
+<p><strong>Role:</strong> Creative Direction, Design & Content Adaptation<br/>
+<strong>Type:</strong> Integrated 360° Brand Campaign</p>
+<p><strong>Project Overview</strong></p>
+<p>Designed and developed a full 360° campaign concept for Virgin Voyages to inspire Sailors to go beyond the ship and discover authentic Caribbean adventures. The campaign delivered a consistent story across social media, print collateral, digital ads, onboard branding, and video content, highlighting excursions through bold visuals and adventurous storytelling.</p>
+<p><strong>My Contributions</strong></p>
+<ul>
+  <li>Hero visuals and adaptive taglines for cross-platform use</li>
+  <li>Social media feed and story posts (Instagram, Facebook, LinkedIn)</li>
+  <li>Print-ready collateral including brochures and stand-up banners</li>
+  <li>Onboard branding applications</li>
+  <li>Concept video edits adapted for digital ads</li>
+</ul>
+<p><strong>Creative Strategy</strong></p>
+<p>The creative approach centered on the idea that every Virgin voyage should feel bigger than just the ship experience. By using the core message #GoBeyondTheShip, I created adaptable campaign assets designed to flex across digital and physical touchpoints. Each execution emphasized adventure, culture, luxury, and fun core values of Virgin Voyages while maintaining a bold, modern design aesthetic aligned with Virgin's brand voice.</p>
+`,
+    image: "/images/projects/virgin-voyages-front-photo.png",
+    images: [
+      "/images/projects/virgin-voyages-front-photo.png",
+      "/images/projects/virgin-voyages-slide-1.png",
+      "/images/projects/virgin-voyages-slide-2.png",
+      "/images/projects/virgin-voyages-slide-3.png",
+      "/images/projects/virgin-voyages-slide-4.png",
+      "/images/projects/virgin-voyages-slide-5.png",
+      "/images/projects/virgin-voyages-slide-6.png",
+      "/images/projects/virgin-voyages-slide-7.png",
+      "/images/projects/virgin-voyages-slide-8.png"
+    ],
+    tools: ["Figma", "Photoshop", "Illustrator", "Premiere Pro", "After Effects"],
+    githubUrl: undefined,
+    liveUrl: undefined,
+    videos: undefined,
+    pdfUrl: "/images/projects/virgin-voyages-campaign-deck.pdf"
+  },
+  {
+    id: "1",
     title: "Fitzen Studios Summer Campaign",
     subtitle: "Creative Direction, Design & Video Editing",
     description: "Seasonal promo campaign for a yoga & wellness studio including social content, flyer design, and a branded video to drive memberships.",
@@ -49,7 +90,7 @@ export const projects: Project[] = [
     videos: ["/images/projects/fitzen-video.mp4"]
   },
   {
-    id: "1",
+    id: "2",
     title: "Event Transportation Lead Gen Platform",
     subtitle: "Developer, Product Manager, SEO Strategist, UI/UX",
     description: "RentATrolley.com is a nationwide event transportation platform created to simplify trolley/bus rentals across 90+ U.S. cities. The platform lets users request quotes and get pricing in under 30 seconds connecting them with our vetted network of trolley operators for weddings, corporate events, parties, and more.",
@@ -110,7 +151,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: "2",
+    id: "3",
     title: "Virgin Voyages Content Series",
     subtitle: "Creative production project",
     description: "Filmed, edited, and directed social media videos for destinations, promos, onboard activities, and a 2023 ad campaign BTS.",
@@ -145,7 +186,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     ]
   },
   {
-    id: "3",
+    id: "4",
     title: "Cleer Product Photography & Web Content",
     subtitle: "Art Director, Photographer, Retoucher, Web-Image Optimizer",
     description: "Premium audio brand, to refresh visual assets for two flagship products active-noise-cancelling headphones and smart-amp earbuds. My goal was to create a versatile image library that could drop straight into product pages, hero banners, emails, and social ads without impacting load speed or brand consistency.",
@@ -178,7 +219,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: "4",
+    id: "5",
     title: "RumbaToursMiami.com – Booking Website Redesign",
     subtitle: "Founder, Product Designer, UI/UX Lead, Junior Frontend Developer",
     description: "RumbaToursMiami.com is the official booking site for Miami's #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand's visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.",
@@ -216,7 +257,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: "5",
+    id: "6",
     title: "Laundrify Website Photography & Creative Direction",
     subtitle: "Creative Director, Photographer, Art Director, Graphic Designer",
     description: "Creative direction and photography for Laundrify, an on-demand laundry app in Miami. Led website image update, product photography, editing, and optimization.",
@@ -246,7 +287,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     videos: undefined
   },
   {
-    id: "6",
+    id: "7",
     title: "Soundcast Product Photography & Art Direction",
     subtitle: "Art Director, Product Photographer, Creative Direction",
     description: "Art direction and product photography for Soundcast, a premium speaker brand. Updated website and online listings with new imagery.",
