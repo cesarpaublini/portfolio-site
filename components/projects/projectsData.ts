@@ -94,7 +94,7 @@ export const projects: Project[] = [
     id: "2",
     title: "Event Transportation Lead Gen Platform",
     subtitle: "Developer, Product Manager, SEO Strategist, UI/UX",
-    description: "RentATrolley.com is a nationwide event transportation platform created to simplify trolley/bus rentals across 90+ U.S. cities. The platform lets users request quotes and get pricing in under 30 seconds connecting them with our vetted network of trolley operators for weddings, corporate events, parties, and more.",
+    description: "",
     fullDescription: `
 <p><strong>Project Overview</strong><br/>
 RentATrolley.com is a nationwide event transportation platform created to simplify trolley/bus rentals across 90+ U.S. cities. The platform lets users request quotes and get pricing in under 30 seconds connecting them with our vetted network of trolley operators for weddings, corporate events, parties, and more.</p>
@@ -190,7 +190,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     id: "4",
     title: "Cleer Product Photography & Web Content",
     subtitle: "Art Director, Photographer, Retoucher, Web-Image Optimizer",
-    description: "Premium audio brand, to refresh visual assets for two flagship products active-noise-cancelling headphones and smart-amp earbuds. My goal was to create a versatile image library that could drop straight into product pages, hero banners, emails, and social ads without impacting load speed or brand consistency.",
+    description: "",
     fullDescription: `
 <p><strong>Cleer Product Photography & Web Content</strong></p>
 <p><strong>Role:</strong> Art Director, Photographer, Retoucher, Web-Image Optimizer<br/>
@@ -223,7 +223,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     id: "5",
     title: "RumbaToursMiami.com – Booking Website Redesign",
     subtitle: "Founder, Product Designer, UI/UX Lead, Junior Frontend Developer",
-    description: "RumbaToursMiami.com is the official booking site for Miami's #1 open-air party bus. I led the complete redesign and rebuild of the website to increase online bookings, improve mobile usability, and elevate the brand's visual identity. The new site features a smooth, scroll-driven layout with embedded video, high-impact CTA buttons, and a responsive booking form that calculates pricing in real time.",
+    description: "",
     fullDescription: `
 <p><strong>RumbaToursMiami.com – Booking Website Redesign</strong></p>
 <p><strong>Role:</strong> Founder, Product Designer, UI/UX Lead, Junior Frontend Developer<br/>
@@ -261,7 +261,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     id: "6",
     title: "Laundrify Website Photography & Creative Direction",
     subtitle: "Creative Director, Photographer, Art Director, Graphic Designer",
-    description: "Creative direction and photography for Laundrify, an on-demand laundry app in Miami. Led website image update, product photography, editing, and optimization.",
+    description: "",
     fullDescription: `
 <p><strong>Laundrify Website Photography & Creative Direction</strong></p>
 <p><strong>Role:</strong> Creative Director, Photographer, Art Director, Graphic Designer<br/>
@@ -291,7 +291,7 @@ RentATrolley.com is a nationwide event transportation platform created to simpli
     id: "7",
     title: "Soundcast Product Photography & Art Direction",
     subtitle: "Art Director, Product Photographer, Creative Direction",
-    description: "Art direction and product photography for Soundcast, a premium speaker brand. Updated website and online listings with new imagery.",
+    description: "",
     fullDescription: `
 <p><strong>Soundcast Product Photography & Art Direction</strong></p>
 <p><strong>Role:</strong> Art Director, Product Photographer, Creative Direction<br/>
